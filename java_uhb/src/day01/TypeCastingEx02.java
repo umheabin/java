@@ -24,6 +24,7 @@ public class TypeCastingEx02 {
 		//같은 타입의 변수를 여러개 선언하는 경우
 		int num5 =1, num6=2, num7=3;
 		
+		
 	}
 
 }
