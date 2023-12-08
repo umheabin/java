@@ -3,6 +3,7 @@ package day01;
 public class VariableEx01 {
 
 	public static void main(String[] args) {
+		//문자형 변수 선언 예제
 		/*변수 선언 방법*
 		1.변수 선언만 함.
 		*변수타입 변수명;*
@@ -24,7 +25,8 @@ public class VariableEx01 {
 		//유니코드 65에 해당하는 문자를 저장
 		char ch5 = '\u0065';
 		System.out.println(ch5);
-		char ch6 = 61;
+		//아스키코드 65에 해당하는 문자를 저장
+		char ch6 = 65;
 		System.out.println(ch6);
 		//유니코드 65에 해당하는 문자를 저장
 		//\가 들어간 문자들이 있음. \n 엔터 , \t 탭키만큼의 공백, \\ :\문자 등
