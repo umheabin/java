@@ -25,6 +25,9 @@ public class VariableEx02 {
     System.out.println(num8);
     int num9 = 0b10; //2진수 10
     System.out.println(num9);
+    //큰수로 초기화를 하는 경우 기본타입이 int이기 때문에 뒤에 접미사 L을 붙여야 한다.
+    long num10 = 123456789123L;
+    System.out.println(num10);
     
     
     
