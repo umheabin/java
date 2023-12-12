@@ -15,21 +15,38 @@ public class HomeworkEx1 {
     	  */
     	Scanner scan = new Scanner(System.in);
  		System.out.println("점수를 입력 : ");
- 		int num = scan.nextInt();
- 		if(num >= 90){
+ 		int score = scan.nextInt();
+ 		if(score >= 90 && score <= 100){
  			System.out.println("A");
  		}
- 		else if(num >=80) {
+ 		else if(score >=80 && score < 90) {
  			System.out.println("B");
  		}
- 		else if(num >=70) {
+ 		else if(score >=70 && score < 80) {
  			System.out.println("C");
  		}
- 		else if(num >=60) {
+ 		else if(score >=60 && score < 70) {
  			System.out.println("D");
  		}
- 		else {
+ 		else if(score < 60) {
  			System.out.println("F");
+ 		}
+ 		else {
+ 			System.out.println("잘못된 점수");
+ 		}
+ 		
+ 		if(score < 0 || score > 100) {
+ 			System.out.println("잘못된 점수");
+ 		}else if(score >=90) {
+ 			System.out.println(score + "점은 A");
+ 		}else if(score >=80) {
+ 			System.out.println(score + "점은 B");
+ 		}else if(score >=70) {
+ 			System.out.println(score + "점은 C");
+ 		}else if(score >=60) {
+ 			System.out.println(score + "점은 D");
+ 		}else {
+ 			System.out.println(score + "점은 F");
  		}
  			
      }
