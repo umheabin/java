@@ -10,6 +10,7 @@ public class AlphabetEx1 {
 		
 		for(char ch = 'a'; ch <= 'z'; ++ch) {
 			System.out.print(ch);
+			
 		}
 	}
 
