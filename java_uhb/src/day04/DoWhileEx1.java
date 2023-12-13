@@ -13,5 +13,6 @@ public class DoWhileEx1 {
 	    	System.out.println("문자 :" + ch);
 	    }while(ch !='q');
 	}
+	
 
 }
