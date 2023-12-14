@@ -27,6 +27,7 @@ public class ReverseNumberEx1 {
 			count++;
 			//tmp를 10으로 나눈 값을 tmp에 저장
 			tmp /= 10;
+			
 		}
 		//반복문을 이용하여 arr에 값을 0번지부터 count개만큼 출력
 		System.out.println("결과 : ");
