@@ -1,6 +1,7 @@
 package day15;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
@@ -108,35 +109,46 @@ public class HomeWorkEx1 {
          
 		}
 		public static void checkWord() {
-			System.out.println("단어 :");
-			String word = scan.next();
+			ArrayList<String> arrWords = new ArrayList<String>();
+	        arrWords.add("chocolate");
+	        arrWords.add("banana");
+	        arrWords.add("strawberry");
+	        arrWords.add("watermelon");
+	        arrWords.add("apologize");
+	        
+	        
+	        //랜덤으로 섞기
+	        Collections.shuffle(arrWords);
+	        
+	        String str = arrWords.get(0);
+	        
+	        // 단어를 글자(char)단위로 쪼개어 배열에 담기
+	        String[] arrQuizChar = str.split("");
+	        
+	        // 단어를 ArrayList에 옮기기
+	        ArrayList<String> arrViewWords = new ArrayList<>(Arrays.asList(arrQuizChar));
+	        
+	        System.out.println("단어 :");
+			String user = scan.next();
 			
-			String[] items= {"cherry","apple","banana","melon","7"};
-
-			Random random=new Random();
-
-			int[] nums=new int[1];
-			for(int i=0; i<nums.length; i++) {
-				nums[i]=random.nextInt(5);
+			if(str.equalsIgnoreCase(user)) {
+				System.out.println("정답입니다!!");
+				System.out.println("입력받은 단어 : " + user);
+				System.out.println("정답은:" + str);
+			} else if(user !=str) {
+				System.out.println("정답이 아닙니다.");
+			    System.out.println("입력받은 단어 : " + user);
+				System.out.println("정답은:" + str);
 			}
-			String result = items[nums[0]]+"|"+items[nums[1]]+"|"+items[nums[2]];
+			
 
-			System.out.println(result);
-
-			int[] point = {10,20,30,40,1000};
-
-			if(nums[0]==nums[1] && nums[0]==nums[2]) {
-				for(int n=0; n<point.length; n++) {
-					if(nums[0]==n) {
-						System.out.println(point[n]+"점 입니다.");
-					}
-				}
-			}else {
-				System.out.println("0점 입니다.");
+	
 			}
-					
+			 
+			
 		}
+		    
+					
+
 		
-		
-}
 
