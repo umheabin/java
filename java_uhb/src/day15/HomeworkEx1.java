@@ -59,7 +59,7 @@ public class HomeWorkEx1 {
 	    System.out.println("6. 뜻 수정");
 	    System.out.println("7. 뜻 삭제");
 	    System.out.println("8. 랜덤 퀴즈쇼!!");
-	    System.out.println("8. 종료");
+	    System.out.println("9. 종료");
 	    System.out.println("-------------");
 	    System.out.print("메뉴 선택 : ");
    
@@ -132,7 +132,7 @@ public class HomeWorkEx1 {
 			String user = scan.next();
 			
 			if(str.equalsIgnoreCase(user)) {
-				System.out.println("정답입니다!!");
+				System.out.println("정답입니다!!!!!!!");
 				System.out.println("입력받은 단어 : " + user);
 				System.out.println("정답은:" + str);
 			} else if(user !=str) {
