@@ -121,12 +121,14 @@ public class HomeWorkEx1 {
 	        Collections.shuffle(arrWords);
 	        
 	        String str = arrWords.get(0);
+	       
 	        
 	        // 단어를 글자(char)단위로 쪼개어 배열에 담기
 	        String[] arrQuizChar = str.split("");
 	        
 	        // 단어를 ArrayList에 옮기기
 	        ArrayList<String> arrViewWords = new ArrayList<>(Arrays.asList(arrQuizChar));
+	        
 	        
 	        System.out.println("단어 :");
 			String user = scan.next();
