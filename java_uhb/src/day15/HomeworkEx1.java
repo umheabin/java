@@ -129,6 +129,8 @@ public class HomeWorkEx1 {
 	        // 단어를 ArrayList에 옮기기
 	        ArrayList<String> arrViewWords = new ArrayList<>(Arrays.asList(arrQuizChar));
 	        
+	        System.out.println("문제 :" + str.substring(4));
+	        
 	        
 	        System.out.println("단어 :");
 			String user = scan.next();
@@ -142,15 +144,18 @@ public class HomeWorkEx1 {
 			    System.out.println("입력받은 단어 : " + user);
 				System.out.println("정답은:" + str);
 			}
+		
+			   
+			}
+			
 			
 
 	
 			}
 			 
 			
-		}
-		    
-					
+	
+		
 
 		
 
