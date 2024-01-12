@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 예제2</title>
+<style>
+    /*
+    position : absolute를 이용하여 
+    박스 안에 박스를 배치하고,
+    안에 있는 박스를 가운데에 배치하는 코드를 작성하시오.
+    */
+    .box1{
+        position:relative;
+        height:500px;
+        border:1px solid black;
+        
+    }
+
+    .inner-box{
+        position:absolute;
+        width:400px;
+        height:300px;
+        border:3px solid red;
+        top:50%;
+        /*top,을 50%로 하면 기준이 되는 요소의
+        높이를 기준으로 50%되는 지점부터 배치*/
+        margin-top:-152px;
+        left:50%;
+        margin-left:-202px
+    }
+</style>
+</head>
+<body>
+    <div class="box1">
+        <div class="inner-box"></div>
+    </div>
+</body>
+</html>
