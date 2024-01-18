@@ -7,10 +7,13 @@
 </head>
 <body>
     <script>
-        function sum1(...ars){
+        /* 나머지 매개변수
+        - 함수 호출 시 넘겨 준 인수들을 배열로 저장해서 관리 
+        */
+        function sum1(...args){
             var sum = 0;
             for(let i = 0; i<args.length; i++){
-                sum +=args[i];
+                sum += args[i];
             }
             return sum;
         }
@@ -19,14 +22,14 @@
         - 함수에서 넘겨준 인수들을 관리하는 객체
         - 배열처럼 사용하지만 배열은 아님
         - 권장하지 않음
-        - 화살표 함수에선 사용 x
+        - 화살표 함수에선 사용 X 
         */
-        function sum2() {
-           var sum = 0;
-           for(let i = 0; i<arguments.length; i++){
-            sum += arguments[i];
-           }
-           return sum;
+        function sum2(){
+            var sum = 0;
+            for(let i = 0; i<arguments.length; i++){
+                sum += arguments[i];
+            }
+            return sum;
         }
         console.log(sum2(1,2,3,4,5));
     </script>
