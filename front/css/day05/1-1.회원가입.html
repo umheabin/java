@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input-box{
+            margin:10px 0;
+        }
+
+        .input-box::after{
+            clear:both; 
+            content:'';
+            display:block; 
+        }
+        
+        
+        .input-box label{
+            float:left;
+            width:110px;
+        }
+
+        .input-box input{
+            float:left;
+            width:calc(100% - 110px);
+            box-sizing:box;
+        }
+        /*
+        calc() 함수: 단위가 다른 값들을 계산하는 함수,연산자 앞뒤로 공백을 반드시 추가
+        */
+
+        .text-center{
+            text-align:center;
+        }
+
+        
+        
+        table{
+            width:100%;
+            height:100px;
+        }
+
+        .title{
+            background-color:orange;
+            color:white;
+            text-align:center;
+        }
+
+
+
+        
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>회원가입</legend>
+            <div class="input-box">
+                <label for="id">아이디</label>
+                <input type="text" name="id" id="id">
+            </div>
+            <div class="input-box">
+                <label for="pw">비밀번호</label>
+                <input type="text" name="pw" id="pw">
+            </div>
+            <div class="input-box">
+                <label for="pw2">비밀번호 확인</label>
+                <input type="text" name="pw2" id="pw2">
+            </div>
+            <div class="input-box text-center">
+                <button type="submit">작성하기</button>
+            </div>
+        </fieldset>
+
+
+    <table border="1">
+    <tr>
+        <td class="title">번호</td>
+        <td colspan="2" class="title">기사제목</td>
+        <td class="title">조회수</td>    
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>HTML은 프로그래밍 언어에 대해..</td>
+        <td><button>기사보기</button></td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>오늘의 기사</td>
+        <td><button>기사보기</button></td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td colspan="3" class="title">전체 기사 개수</td>
+        <td class="title">2</td>
+    </tr>
+    </table>
+</body>
+</html>
