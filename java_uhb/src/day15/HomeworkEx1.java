@@ -16,7 +16,7 @@ public class HomeWorkEx1 {
 	
 	private static List<Student> list = new ArrayList<Student>();
 
-  public static void main(String[] args) {
+  public static void main(String)  args) {
 		
 		
 		/* 영어 단어장을 관리하는 프로그램을 작성하세요.
@@ -144,6 +144,7 @@ public class HomeWorkEx1 {
 			    System.out.println("입력받은 단어 : " + user);
 				System.out.println("정답은:" + str);
 			}
+			
 		
 			   
 			}
